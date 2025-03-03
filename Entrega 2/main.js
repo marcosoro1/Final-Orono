@@ -130,7 +130,6 @@ document.getElementById("btnCalcularTotal").addEventListener("click", () =>{
 });
 
 document.getElementById("formularioAdmin").addEventListener("submit", function (event){
-  event.preventDefault();
   const nombre = document.getElementById("nombreProducto").value;
   const precio = parseFloat(document.getElementById("precioProducto").value);
 

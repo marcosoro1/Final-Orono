@@ -1,4 +1,4 @@
-body {
+body{
     font-family: Arial, sans-serif;
     margin: 20px;
     background: #f4f4f4;
@@ -6,12 +6,12 @@ body {
     color: #333;
 }
 
-h1 {
+h1{
     color: #444;
-    font-size: 28px;
+    font-size: 29px;
 }
 
-button {
+button{
     background: #5c85d6;
     color: white;
     border: none;
@@ -23,11 +23,11 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
+button:hover{
     background: #4a6eb1;
 }
 
-.section {
+.section{
     background: white;
     padding: 20px;
     margin: 20px auto;
@@ -36,7 +36,7 @@ button:hover {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-input {
+input{
     padding: 8px;
     margin: 8px;
     border: 1px solid #ccc;
@@ -47,12 +47,12 @@ input {
     margin-right: auto;
 }
 
-ul {
+ul{
     list-style: none;
     padding: 0;
 }
 
-li {
+li{
     background: #e8e8e8;
     padding: 10px;
     margin: 5px;
