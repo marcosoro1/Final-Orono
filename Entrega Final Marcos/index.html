@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de compras</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/textos.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Carrito de compras</h1>
+    <div class="nav">
+      <button id="btnAdmin" class="btn admin-btn">Administrador</button>
+      <button id="btnCompra" class="btn compra-btn">Ir a Compras</button>
+    </div>
+  </header>
+
+  <section id="seccionCompra" class="section">
+    <h2>Productos Disponibles</h2>
+    <div id="productosCompra" class="cards-container"></div>
+    <h2>Carrito de Compras</h2>
+    <div id="carritoContainer"></div>
+    <div id="totalDisplay">Total: $0</div>
+    <div class="cart-actions">
+      <button id="vaciarCarrito" class="btn danger-btn">Vaciar Carrito</button>
+      <button id="finalizarCompra" class="btn success-btn">Finalizar Compra</button>
+    </div>
+  </section>
+
+  <section id="seccionClave" class="section hidden">
+    <h2>Acceso Administrador</h2>
+    <h3>La clave 1234</h3>
+    <input type="password" id="claveAdmin" placeholder="Ingrese la clave">
+    <button id="btnValidarAdmin" class="btn">Validar</button>
+    <p id="mensajeError" class="error-message hidden">Clave incorrecta</p>
+  </section>
+
+  <section id="seccionAdmin" class="section hidden">
+    <h2>Administración de Productos</h2>
+    <form id="formularioAdmin">
+      <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
+      <input type="file" id="imagenProducto" accept="image/*" required>
+      <textarea id="descripcionProducto" placeholder="Descripción" required></textarea>
+      <input type="number" id="precioProducto" placeholder="Precio" required>
+      <button type="submit" class="btn">Agregar Producto</button>
+    </form>
+
+    <button id="btnReset" class="btn reset-btn">Resetear Sistema</button>
+    <h3>Productos Disponibles</h3>
+    <div id="adminProductos" class="cards-container"></div>
+  </section>
+</body>
+</html>

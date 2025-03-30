@@ -1,0 +1,74 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Laptop Gamer",
+      "descripcion": "Potente laptop para gaming con tarjeta gráfica RTX 4070.",
+      "precio": 1500,
+      "imagen": "https://images.unsplash.com/photo-1617194242688-1283f274e46d?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 2,
+      "nombre": "Smartphone",
+      "descripcion": "Celular con cámara de 108MP y pantalla AMOLED 120Hz.",
+      "precio": 800,
+      "imagen": "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=250&h=150&q=80&bg=white"
+    },
+    {
+      "id": 3,
+      "nombre": "Auriculares Bluetooth",
+      "descripcion": "Auriculares inalámbricos con cancelación de ruido activa.",
+      "precio": 120,
+      "imagen": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 4,
+      "nombre": "Teclado Mecánico",
+      "descripcion": "Teclado mecánico RGB.",
+      "precio": 190,
+      "imagen": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 5,
+      "nombre": "Mouse Gamer",
+      "descripcion": "Mouse ergonómico de alta precisión.",
+      "precio": 160,
+      "imagen": "https://images.unsplash.com/photo-1618499890638-3a0dd4b278b7?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 6,
+      "nombre": "Monitor 4K",
+      "descripcion": "Monitor 4K UHD con tasa de refresco de 400Hz.",
+      "precio": 2500,
+      "imagen": "https://images.unsplash.com/photo-1586210579191-33b45e38fa2c?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 7,
+      "nombre": "Silla Gamer",
+      "descripcion": "Silla ergonómica con soporte lumbar y reposapiés ajustable.",
+      "precio": 250,
+      "imagen": "https://images.unsplash.com/photo-1613413561312-e329d024ed65?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 8,
+      "nombre": "Disco Duro Externo",
+      "descripcion": "Almacenamiento portátil SSD de 28TB ultra rápido.",
+      "precio": 110,
+      "imagen": "https://images.unsplash.com/photo-1613070541337-b40942ee6527?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 9,
+      "nombre": "Tarjeta Gráfica",
+      "descripcion": "GPU NVIDIA RTX 1080 Ti con 16GB GDDR7X.",
+      "precio": 2700,
+      "imagen": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=500&q=80"
+    },
+    {
+      "id": 10,
+      "nombre": "Fuente de Poder",
+      "descripcion": "Fuente de poder de 1000W certificada.",
+      "precio": 260,
+      "imagen": "https://i0.wp.com/www.deskdecode.com/wp-content/uploads/2017/01/Corsair-CS450M-Copy-min.png?w=500&ssl=1"
+    }
+  ]
+}
