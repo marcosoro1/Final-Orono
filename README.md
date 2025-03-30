@@ -3,7 +3,7 @@ mis primeros archivos y proyectos JS, estoy acostumbrado a programar en C++, C y
 está mas enmarcado para el backend me sire saber un poco de esto para ello.
 
 Por si no queda claro la clave del admin es 1234 ya que lo quise hacer lo más funcional posible.
-Tuve inconvenientes con el manejo de memoria de los productos cargados por el admin pero cre haberlos solucionado.
+Tuve inconvenientes con el manejo de memoria de los productos cargados por el admin pero creo haberlos solucionado.
 
 Sin más, aguardo su correción.
 
