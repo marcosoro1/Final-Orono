@@ -2,53 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Carrito de compras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de tienda</title>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="css/textos.css">
   <script defer src="js/main.js"></script>
 </head>
 <body>
   <header>
-    <h1>Carrito de compras</h1>
-    <div class="nav">
-      <button id="btnAdmin" class="btn admin-btn">Administrador</button>
-      <button id="btnCompra" class="btn compra-btn">Ir a Compras</button>
+    <div class="contenedor-header">
+      <h1>🛒 CoderShop</h1>
+      <nav class="navegacion-principal">
+        <button id="btnCompra" class="btn compra-btn">Tienda</button>
+        <button id="btnAdmin" class="btn admin-btn">Admin</button>
+      </nav>
     </div>
   </header>
 
-  <section id="seccionCompra" class="section">
-    <h2>Productos Disponibles</h2>
-    <div id="productosCompra" class="cards-container"></div>
-    <h2>Carrito de Compras</h2>
-    <div id="carritoContainer"></div>
-    <div id="totalDisplay">Total: $0</div>
-    <div class="cart-actions">
-      <button id="vaciarCarrito" class="btn danger-btn">Vaciar Carrito</button>
-      <button id="finalizarCompra" class="btn success-btn">Finalizar Compra</button>
-    </div>
-  </section>
+  <main class="contenedor-principal">
+    <section id="seccionCompra" class="section">
+      <div class="compra-grid">
+        <div class="columna-productos">
+          <h2 class="titulo-seccion">Productos Tecnológicos</h2>
+          <div id="productosCompra" class="cards-container"></div>
+        </div>
 
-  <section id="seccionClave" class="section hidden">
-    <h2>Acceso Administrador</h2>
-    <h3>La clave 1234</h3>
-    <input type="password" id="claveAdmin" placeholder="Ingrese la clave">
-    <button id="btnValidarAdmin" class="btn">Validar</button>
-    <p id="mensajeError" class="error-message hidden">Clave incorrecta</p>
-  </section>
+        <aside class="columna-carrito">
+          <div class="carrito-fijo">
+            <div class="encabezado-carrito">
+              <h2>Tu Carrito</h2>
+            </div>
+            <div id="carritoContainer" class="contenido-carrito"></div>
+            <div class="resumen-carrito">
+              <div class="fila-total">
+                <span id="totalDisplay">$0</span>
+              </div>
+              <div class="acciones-carrito">
+                <button id="vaciarCarrito" class="btn danger-btn peque">Vaciar</button>
+                <button id="finalizarCompra" class="btn success-btn">Pagar Ahora</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  <section id="seccionAdmin" class="section hidden">
-    <h2>Administración de Productos</h2>
-    <form id="formularioAdmin">
-      <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
-      <input type="file" id="imagenProducto" accept="image/*" required>
-      <textarea id="descripcionProducto" placeholder="Descripción" required></textarea>
-      <input type="number" id="precioProducto" placeholder="Precio" required>
-      <button type="submit" class="btn">Agregar Producto</button>
-    </form>
+    <section id="seccionClave" class="section hidden">
+      <div class="contenedor-acceso">
+        <h2 class="titulo-seccion">Acceso Administrador</h2>
+        <div class="formulario-acceso">
+          <input type="password" id="claveAdmin" placeholder="Ingrese la clave de acceso" class="input-acceso">
+          <button id="btnValidarAdmin" class="btn">Validar Credenciales</button>
+          <p id="mensajeError" class="mensaje-error hidden">❌ Clave incorrecta</p>
+        </div>
+      </div>
+    </section>
 
-    <button id="btnReset" class="btn reset-btn">Resetear Sistema</button>
-    <h3>Productos Disponibles</h3>
-    <div id="adminProductos" class="cards-container"></div>
-  </section>
+    <section id="seccionAdmin" class="section hidden">
+      <div class="contenedor-admin">
+        <h2 class="titulo-seccion">Panel de Administración</h2>
+        <form id="formularioAdmin" class="formulario-admin">
+          <div class="form-grid">
+            <div class="grupo-formulario">
+              <label for="nombreProducto">Nombre del producto</label>
+              <input type="text" id="nombreProducto" required>
+            </div>
+            <div class="grupo-formulario">
+              <label for="precioProducto">Precio</label>
+              <input type="number" id="precioProducto" step="0.01" min="0" required>
+            </div>
+            <div class="grupo-formulario span-2">
+              <label for="descripcionProducto">Descripción</label>
+              <textarea id="descripcionProducto" rows="3" required></textarea>
+            </div>
+            <div class="grupo-formulario span-2">
+              <label for="imagenProducto">Imagen del producto</label>
+              <input type="file" id="imagenProducto" accept="image/*" required>
+            </div>
+          </div>
+          <button type="submit" class="btn">➕ Agregar producto</button>
+        </form>
+        <div class="controles-admin">
+          <button id="btnReset" class="btn reset-btn peque">🔄 Restablecer productos</button>
+        </div>
+        <h3 class="subtitulo-admin">Productos actuales</h3>
+        <div id="adminProductos" class="cards-container"></div>
+      </div>
+    </section>
+
+    <section id="seccionCheckout" class="section hidden">
+      <div class="checkout-container">
+        <h2 class="titulo-seccion">Finalizar Compra</h2>
+        <form id="formularioCheckout" class="checkout-form">
+          <div class="grid-checkout">
+            <div class="columna-datos">
+              <fieldset class="grupo-datos">
+                <legend>📝 Datos Personales</legend>
+                <div class="grupo-formulario">
+                  <label for="nombreCliente">Nombre Completo</label>
+                  <input type="text" id="nombreCliente" required>
+                </div>
+                <div class="grupo-formulario">
+                  <label for="emailCliente">Correo Electrónico</label>
+                  <input type="email" id="emailCliente" required>
+                </div>
+                <div class="grupo-formulario">
+                  <label for="telefonoCliente">Teléfono</label>
+                  <input type="tel" id="telefonoCliente" required>
+                </div>
+              </fieldset>
+              <fieldset class="grupo-datos">
+                <legend>🏠 Dirección de Envío</legend>
+                <div class="grupo-formulario">
+                  <label for="direccionCliente">Calle y Número</label>
+                  <input type="text" id="direccionCliente" required>
+                </div>
+                <div class="grupo-formulario-doble">
+                  <div class="grupo-formulario">
+                    <label for="ciudadCliente">Ciudad</label>
+                    <input type="text" id="ciudadCliente" required>
+                  </div>
+                  <div class="grupo-formulario">
+                    <label for="cpCliente">Código Postal</label>
+                    <input type="text" id="cpCliente" required>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="columna-pago">
+              <fieldset class="grupo-datos">
+                <legend>💳 Método de Pago</legend>
+                <div class="grupo-formulario">
+                  <label for="metodoPago">Seleccione Método</label>
+                  <select id="metodoPago" required>
+                    <option value="">-- Elegir --</option>
+                    <option value="tarjeta">Tarjeta de Crédito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                  </select>
+                </div>
+                <div id="detallesTarjeta" class="hidden">
+                  <div class="grupo-formulario">
+                    <label for="numeroTarjeta">Número de Tarjeta</label>
+                    <input type="text" id="numeroTarjeta" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="grupo-formulario-doble">
+                    <div class="grupo-formulario">
+                      <label for="vencimientoTarjeta">Vencimiento</label>
+                      <input type="text" id="vencimientoTarjeta" placeholder="MM/AA">
+                    </div>
+                    <div class="grupo-formulario">
+                      <label for="cvvTarjeta">CVV</label>
+                      <input type="text" id="cvvTarjeta" placeholder="123">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="acciones-checkout">
+                <button type="submit" class="btn success-btn">✅ Confirmar Compra</button>
+                <button type="button" id="cancelarCheckout" class="btn danger-btn">❌ Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
