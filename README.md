@@ -1,3 +1,9 @@
+ACTUALIZACIÓN 7/4.
+Buenas profe hice todo lo que pude en lo que me ha solicitado, espero cumpla con los requierimientos, en cuanto al uso de JSON yo estuve en duda si lo estaba haciendo mal ya que obviamente noté que lo hice dos veces y entendía que lo tenía que usar directamente con el fetch pero bueno nada jaja, como funcionaba lo habia dejado así.
+Saludos.
+
+
+--------------------------------------------------
 Buenas profesor, le dejo la entrega final, tuve algunos probelmas al pasar el HTML a una subcarpeta para que no quede "suelto" pero me daba error 404 y no supe como manejarlo ya que son
 mis primeros archivos y proyectos JS por lo que podrá ver que no la he puesto en una carpeta propia para el html, estoy acostumbrado a programar en C++, C y algo de Java por la Uni por lo que fue todo un reto para mi acercarme al diseño web. Si bien mi furuto
 está mas encaminado para el backend me sire saber un poco de esto para ello.
