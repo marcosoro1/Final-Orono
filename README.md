@@ -1,5 +1,6 @@
 ACTUALIZACIÓN 7/4.
 Buenas profe hice todo lo que pude en lo que me ha solicitado, espero cumpla con los requierimientos, en cuanto al uso de JSON yo estuve en duda si lo estaba haciendo mal ya que obviamente noté que lo hice dos veces y entendía que lo tenía que usar directamente con el fetch pero bueno nada jaja, como funcionaba lo habia dejado así.
+Ahora ya más que un carrito de compras se parece a una pagina de compras, he agregado emojis (me los ha brindado la IA ya que como mencione en la entgrega anterior son mis primeras paginas y sería descarado decir que yo sabia que se podía agregar esos emojis) que la hacen ver más amigable a la vista, además de una buena finalización compra y simulador de entrega donde uso la fecha actual en la que se usa la página. 
 Saludos.
 
 
